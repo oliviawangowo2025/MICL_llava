@@ -5,7 +5,7 @@ deepspeed --include localhost:1 llava/train/train_mem.py \
     --deepspeed ./scripts/zero3.json \
     --model_name_or_path liuhaotian/llava-v1.5-7b \
     --version v1 \
-    --data_path ./finetune_data/0626_finetune_train_templated_pair.json \
+    --data_path ./finetune_data/finetune_train_templated_pair.json \
     --image_folder . \
     --vision_tower openai/clip-vit-large-patch14-336 \
     --mm_projector_type mlp2x_gelu \
@@ -15,7 +15,7 @@ deepspeed --include localhost:1 llava/train/train_mem.py \
     --image_aspect_ratio pad \
     --group_by_modality_length True \
     --bf16 True \
-    --output_dir ./checkpoints/llava-v1.5-7b-task-lora-0626-pair \
+    --output_dir ./checkpoints/llava-v1.5-7b-task-lora-pair \
     --num_train_epochs 1 \
     --per_device_train_batch_size 4 \
     --gradient_accumulation_steps 1 \
