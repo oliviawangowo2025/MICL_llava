@@ -1,0 +1,58 @@
+[
+  {
+    "id": "trial_T20190908_215958_710682_1_Plate|-02.22|+00.78|-01.76_000000182",
+    "image": "all_finetune_dataset_all_templated_pair_random/plate_clean/trial_T20190908_215958_710682_1_Plate|-02.22|+00.78|-01.76_000000182.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\n The image shows three plates: clean (left, single color), dirty (middle, with stains), and the query (right). Is the query plate used? Answer only 'yes' or 'no'."
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": "trial_T20190906_200453_215248_1_Plate|-05.52|+00.79|+04.69_000000532",
+    "image": "all_finetune_dataset_all_templated_pair_random/plate_dirty/trial_T20190906_200453_215248_1_Plate|-05.52|+00.79|+04.69_000000532.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\n The image shows three plates: clean (left, single color), dirty (middle, with stains), and the query (right). Is the query plate used? Answer only 'yes' or 'no'."
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": "trial_T20190907_185826_125666_1_Pot|+00.80|+00.94|-00.74_000000168",
+    "image": "all_finetune_dataset_all_templated_pair_random/pot_clean/trial_T20190907_185826_125666_1_Pot|+00.80|+00.94|-00.74_000000168.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\n The image shows three pots: clean (left, single color), dirty (middle, with stains), and the query (right). Is the query pot used? Answer only 'yes' or 'no'."
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": "trial_T20190907_141859_421899_3_Pot|+00.64|+00.85|+01.77_000000189",
+    "image": "all_finetune_dataset_all_templated_pair_random/pot_dirty/trial_T20190907_141859_421899_3_Pot|+00.64|+00.85|+01.77_000000189.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\n The image shows three pots: clean (left, single color), dirty (middle, with stains), and the query (right). Is the query pot used? Answer only 'yes' or 'no'."
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  }
+]
