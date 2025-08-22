@@ -141,7 +141,7 @@ class llava_bot:
                 
 start = time.time()
 llava_was = llava_bot('liuhaotian/llava-v1.5-7b')
-score, result_dict, exception_dict = llava_was.test_data("0615_finetune_val_templated_pair_correct_woGD_random.json")
+score, result_dict, exception_dict = llava_was.test_data("finetune_val_templated_pair_correct_woGD_random.json")
 save_output(score, result_dict, exception_dict, "eval_results/eval_affordance_reasoning_llava-pretrained_output_correct_woGD_random.json")
 end = time.time()
 print("Time : ", end - start)
@@ -150,8 +150,8 @@ print("Time : ", end - start)
 ## the checkpoint of LoRA fine-tuning llava-v1.5-7b will be released upon acceptance and can be evaluated as follows:
 '''
 start = time.time()
-llava_was = llava_bot('fine_tune_llava_lora_0615-pair')
-score, result_dict, exception_dict = llava_was.test_data("finetune_llava/0615_finetune_val_templated_pair_correct_woGD_random.json")
+llava_was = llava_bot('fine_tune_llava_lora-pair')
+score, result_dict, exception_dict = llava_was.test_data("finetune_llava/finetune_val_templated_pair_correct_woGD_random.json")
 save_output(score, result_dict, exception_dict, "eval_results/eval_affordance_reasoning_llava-0615-pair_output_correct_woGD_random.json")
 end = time.time()
 print("Time : ", end - start)
